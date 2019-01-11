@@ -9,3 +9,19 @@
   - Makes sure that after 2 cards are clicked, the move counter increases
 
 */
+document.addEventListener('DOMContentLoaded', () => {
+  describe('Cards', () => {
+    it('should start with a total of 16 cards', () => {
+      const allTheCards = document.querySelectorAll('.card');
+      expect(allTheCards.length).toBe(16);
+
+    });
+
+    it('should start with all the cards to be closed', () => {
+      const allTheOpenedCards = document.querySelectorAll('.open');
+      expect(allTheOpenedCards.length).toBe(0);
+
+    });
+  });
+
+});
