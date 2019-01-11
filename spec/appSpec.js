@@ -24,4 +24,27 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  describe('Variables', () => {
+    describe('MoveCounter', () => {
+      it('should Start at zero moves', () => {
+        expect(moveCounter).toBe(0);
+
+      });
+
+      it('should increase by one after two cards are clicked', () => {
+        const cards = document.querySelectorAll('.card');
+        const moveCounterEle = document.querySelector('span.moves');
+        console.log('cards', cards);
+
+        expect(cards.length).toBe(16);
+        cards[1].click();
+        cards[6].click();
+        console.log('moveCounter', moveCounter);
+        expect(moveCounterEle.textContent).toBe('1');
+
+      });
+    });
+
+  });
+
 });
