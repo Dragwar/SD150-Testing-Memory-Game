@@ -27,7 +27,9 @@ document.addEventListener('DOMContentLoaded', () => {
   describe('Variables', () => {
     describe('MoveCounter', () => {
       it('should Start at zero moves', () => {
+        const moveCounterEle = document.querySelector('span.moves');
         expect(moveCounter).toBe(0);
+        expect(moveCounterEle.textContent).toBe('0');
 
       });
 
