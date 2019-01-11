@@ -3,12 +3,17 @@
     <head>
         <meta charset="utf-8">
         <title>Matching Game</title>
-        <link rel="icon" href="img\icon.ico"/>
+        <link rel="icon" href="./img\icon.ico"/>
         <meta name="description" content="Match The Cards Game">
         <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
         <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Coda">
-        <link rel="stylesheet" href="css/app.css">
+        <link rel="stylesheet" href="./css/app.css">
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.28.11/dist/sweetalert2.all.min.js"></script>
+        <!-- CDN jasmine files for testing this game/website -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.3.0/jasmine.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.3.0/jasmine-html.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.3.0/boot.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.3.0/jasmine.min.css">
     </head>
     <body>
 
@@ -88,6 +93,9 @@
             </ul>
         </div>
 
-        <script src="js/app.js"></script>
+        <!-- src js file for testing (and running the game) -->
+        <script src="./js/app.js"></script>
+        <!-- spec js file for testing app.js -->
+        <script src="./spec/appSpec.js"></script>
     </body>
 </html>
