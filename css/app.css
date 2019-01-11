@@ -153,3 +153,12 @@ h1 {
     display: flex;
     justify-content: space-between;
 }
+
+.jasmine_html-reporter {
+    max-width: 100%;
+    margin: auto;
+}
+
+.deck {
+    max-width: 100%;
+}
