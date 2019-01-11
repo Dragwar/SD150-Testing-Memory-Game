@@ -51,6 +51,10 @@ TO-DO's:
 
 */
 
+// let url = new URL("https://dragwar.github.io/SD150-Testing-Memory-Game/");
+// url.searchParams.set('random', false);
+// window.location.replace(url);
+
 const cardDeckElement = document.querySelector('ul.deck');
 const cardDeckNodeList = document.querySelectorAll('ul.deck li');
 const moveCounterElement = document.querySelector('span.moves');
